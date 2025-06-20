@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Me</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <h1>Contact Form</h1>
+    <nav>
+      <a href="portfolio.html">Home</a> |
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+  <main>
+    <form action="#" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="1234567890" pattern="[0-9]{10}" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+      <fieldset>
+        <legend>Preferred Contact Method:</legend>
+        <input type="checkbox" name="contact_method[]" value="email" id="contact_email">
+        <label for="contact_email">Email</label>
+        <input type="checkbox" name="contact_method[]" value="phone" id="contact_phone">
+        <label for="contact_phone">Phone</label>
+        <input type="checkbox" name="contact_method[]" value="text" id="contact_text">
+        <label for="contact_text">Text</label>
+      </fieldset>
+      <fieldset>
+        <legend>Inquiry Type:</legend>
+        <input type="radio" name="inquiry" value="general" id="general" required>
+        <label for="general">General</label>
+        <input type="radio" name="inquiry" value="business" id="business">
+        <label for="business">Business</label>
+        <input type="radio" name="inquiry" value="support" id="support">
+        <label for="support">Support</label>
+      </fieldset>
+      <label for="service">Select a service:</label>
+      <select name="service" id="service" required>
+        <option value="">--Choose--</option>
+        <option value="web">Web Design</option>
+        <option value="seo">SEO</option>
+        <option value="support">Support</option>
+      </select>
+      <label for="date">Preferred Contact Date:</label>
+      <input type="date" id="date" name="date">
+      <label for="urgency">Urgency (1 - Low, 10 - High):</label>
+      <input type="range" id="urgency" name="urgency" min="1" max="10">
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+  <footer>
+    <p>© 2025 Aakash Khandelwal</p>
+  </footer>
+</body>
+</html>

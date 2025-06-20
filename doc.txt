@@ -1,0 +1,23 @@
+HTML Element Descriptions:
+- <h1> to <h6>: Used for headings. h1 is the largest, h6 the smallest.
+- <ul> and <ol>: Unordered and ordered lists respectively.
+- <img>: Embeds an image. The "alt" attribute describes it for accessibility.
+- <table>: Displays tabular data with rows and columns.
+- <form>: Contains input fields for user interaction.
+- <input>: Collects various input types (text, email, phone, etc.).
+- <select>: Dropdown for selecting a single option.
+- <textarea>: Multi-line text input.
+- <header>, <nav>, <main>, <section>, <footer>: Semantic elements for page structure.
+
+Reason for Input Types:
+- text: general name input
+- email: validates email format
+- tel: for phone numbers
+- textarea: allows longer user input
+- checkboxes: allow multiple contact preferences
+- radio buttons: force one inquiry type
+- date/range/select: extra user detail and interactivity
+
+Navigation Structure:
+- Each page includes a <nav> bar at the top linking to other pages.
+- All links are relative, allowing easy local testing.
